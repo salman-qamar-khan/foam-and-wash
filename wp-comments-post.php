@@ -13,7 +13,7 @@ if ( 'POST' != $_SERVER['REQUEST_METHOD'] ) {
 
 	header('Allow: POST');
 	header("$protocol 405 Method Not Allowed");
-	header('Content-Type: text/pla');
+	header('Content-Type: text/pl');
 	exit;
 }
 
