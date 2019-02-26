@@ -58,6 +58,5 @@ $location = empty( $_POST['redirect_to'] ) ? get_comment_link( $comment ) : $_PO
  * @param WP_Comment $comment  Comment object.
  */
 $location = apply_filters( 'comment_post_redirect', $location, $comment );
-
 wp_safe_redirect( $location );
 exit;
