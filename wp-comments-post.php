@@ -19,7 +19,6 @@ if ( 'POST' != $_SERVER['REQUEST_METHOD'] ) {
 
 /** Sets up the WordPress Environment. */
 require( dirname(__FILE__) . '/wp-load.php' );
-
 nocache_headers();
 $comment = wp_handle_comment_submission( wp_unslash( $_POST ) );
 if ( is_wp_error( $comment ) ) {
