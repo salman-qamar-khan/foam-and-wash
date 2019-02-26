@@ -48,7 +48,6 @@ $cookies_consent = ( isset( $_POST['wp-comment-cookies-consent'] ) );
 do_action( 'set_comment_cookies', $comment, $user, $cookies_consent );
 
 $location = empty( $_POST['redirect_to'] ) ? get_comment_link( $comment ) : $_POST['redirect_to'] . '#comment-' . $comment->comment_ID;
-
 /**
  * Filters the location URI to send the commenter after posting.
  *
