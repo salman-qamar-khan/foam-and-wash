@@ -31,7 +31,6 @@ if ( is_wp_error( $comment ) ) {
 		exit;
 	}
 }
-
 $user = wp_get_current_user();
 $cookies_consent = ( isset( $_POST['wp-comment-cookies-consent'] ) );
 /**
